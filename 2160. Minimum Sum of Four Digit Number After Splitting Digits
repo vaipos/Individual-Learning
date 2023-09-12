@@ -1,0 +1,5 @@
+class Solution(object):
+    def minimumSum(self, num):
+        d = sorted(str(num)) # ascending order
+        return int(d[0])*10 + int(d[1])*10 + int(d[2]) + int(d[3])
+        # the smallest values can become the 10's and the largest values can stay in 1's place
